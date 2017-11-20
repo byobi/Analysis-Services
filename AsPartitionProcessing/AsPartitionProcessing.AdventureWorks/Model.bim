@@ -10,17 +10,18 @@
         "connectionDetails": {
           "protocol": "tds",
           "address": {
-            "server": "localhost\\SP1",
-            "database": "AdventureWorksDW"
+            "server": "opifex-demo-sql01.database.windows.net",
+            "database": "ASPP_AdventureWorksDW"
           },
           "authentication": null,
           "query": null
         },
         "options": {},
         "credential": {
-          "AuthenticationKind": "ServiceAccount",
+          "AuthenticationKind": "UsernamePassword",
           "kind": "SQL",
-          "path": "localhost\\sp1",
+          "path": "opifex-demo-sql01.database.windows.net;ASPP_AdventureWorksDW",
+          "Username": "demo-admin",
           "EncryptConnection": false
         }
       }
@@ -2018,45 +2019,6 @@
               },
               {
                 "name": "InternetCurrentQuarterSalesPerformance"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "roles": [
-      {
-        "name": "General Users",
-        "description": "Readers of the model",
-        "modelPermission": "read",
-        "members": [
-          {
-            "memberName": "kayu@microsoft.com",
-            "memberId": "kayu@microsoft.com",
-            "identityProvider": "AzureAD"
-          },
-          {
-            "memberName": "bretgr@microsoft.com",
-            "memberId": "bretgr@microsoft.com",
-            "identityProvider": "AzureAD"
-          },
-          {
-            "memberName": "jocaplan@microsoft.com",
-            "memberId": "jocaplan@microsoft.com",
-            "identityProvider": "AzureAD"
-          }
-        ],
-        "tablePermissions": [
-          {
-            "name": "Geography",
-            "filterExpression": "Geography[CountryCode]=\"US\""
-          },
-          {
-            "name": "Customer",
-            "columnPermissions": [
-              {
-                "name": "Phone",
-                "metadataPermission": "none"
               }
             ]
           }

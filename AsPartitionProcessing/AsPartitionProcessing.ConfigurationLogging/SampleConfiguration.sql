@@ -1,8 +1,8 @@
 ﻿INSERT INTO [dbo].[ModelConfiguration]
 VALUES(
      1                          --[ModelConfigurationID]
-    ,'localhost'                --[AnalysisServicesServer]
-    ,'AdventureWorks'           --[AnalysisServicesDatabase]
+    ,'asazure://southcentralus.asazure.windows.net/opifexdemotabular'                --[AnalysisServicesServer]
+    ,'ASPP_AdventureWorksDW'           --[AnalysisServicesDatabase]
     ,1                          --[InitialSetUp]
     ,1                          --[IncrementalOnline]
     ,1                          --[IntegratedAuth]

@@ -4,27 +4,25 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>AsPartitionProcessing.ConfigurationLogging</Name>
+    <Name>AsPartitionProcessing.AdventureWorksDW</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{d99fde4b-3174-440b-b867-a09c294086d0}</ProjectGuid>
+    <ProjectGuid>{83e04ee7-1fcd-4622-9926-fa7b0a0e528b}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>AsPartitionProcessing.ConfigurationLogging</RootNamespace>
-    <AssemblyName>AsPartitionProcessing.ConfigurationLogging</AssemblyName>
-    <ModelCollation>1033,CI</ModelCollation>
+    <RootNamespace>AsPartitionProcessing.AdventureWorksDW</RootNamespace>
+    <AssemblyName>AsPartitionProcessing.AdventureWorksDW</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <TargetLanguage>CS</TargetLanguage>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
-    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
-    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -62,23 +60,49 @@
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Views\" />
-    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="dbo\Functions\" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\ModelConfiguration.sql" />
-    <Build Include="dbo\Tables\PartitioningConfiguration.sql" />
-    <Build Include="dbo\Tables\ProcessingLog.sql" />
-    <Build Include="dbo\Tables\TableConfiguration.sql" />
-    <Build Include="dbo\Views\vPartitioningConfiguration.sql" />
-    <Build Include="dbo\Stored Procedures\usp_LastProcessingLogs.sql" />
+    <Build Include="dbo\Tables\AdventureWorksDWBuildVersion.sql" />
+    <Build Include="dbo\Tables\DatabaseLog.sql" />
+    <Build Include="dbo\Tables\DimAccount.sql" />
+    <Build Include="dbo\Tables\DimCurrency.sql" />
+    <Build Include="dbo\Tables\DimCustomer.sql" />
+    <Build Include="dbo\Tables\DimDate.sql" />
+    <Build Include="dbo\Tables\DimDepartmentGroup.sql" />
+    <Build Include="dbo\Tables\DimEmployee.sql" />
+    <Build Include="dbo\Tables\DimGeography.sql" />
+    <Build Include="dbo\Tables\DimOrganization.sql" />
+    <Build Include="dbo\Tables\DimProduct.sql" />
+    <Build Include="dbo\Tables\DimProductCategory.sql" />
+    <Build Include="dbo\Tables\DimProductSubcategory.sql" />
+    <Build Include="dbo\Tables\DimPromotion.sql" />
+    <Build Include="dbo\Tables\DimReseller.sql" />
+    <Build Include="dbo\Tables\DimSalesReason.sql" />
+    <Build Include="dbo\Tables\DimSalesTerritory.sql" />
+    <Build Include="dbo\Tables\DimScenario.sql" />
+    <Build Include="dbo\Tables\FactAdditionalInternationalProductDescription.sql" />
+    <Build Include="dbo\Tables\FactCallCenter.sql" />
+    <Build Include="dbo\Tables\FactCurrencyRate.sql" />
+    <Build Include="dbo\Tables\FactFinance.sql" />
+    <Build Include="dbo\Tables\FactInternetSales.sql" />
+    <Build Include="dbo\Tables\FactInternetSalesReason.sql" />
+    <Build Include="dbo\Tables\FactProductInventory.sql" />
+    <Build Include="dbo\Tables\FactResellerSales.sql" />
+    <Build Include="dbo\Tables\FactSalesQuota.sql" />
+    <Build Include="dbo\Tables\FactSurveyResponse.sql" />
+    <Build Include="dbo\Tables\NewFactCurrencyRate.sql" />
+    <Build Include="dbo\Tables\ProspectiveBuyer.sql" />
+    <Build Include="dbo\Views\vAssocSeqLineItems.sql" />
+    <Build Include="dbo\Views\vAssocSeqOrders.sql" />
+    <Build Include="dbo\Views\vDMPrep.sql" />
+    <Build Include="dbo\Views\vTargetMail.sql" />
+    <Build Include="dbo\Views\vTimeSeries.sql" />
+    <Build Include="dbo\Functions\udfBuildISO8601Date.sql" />
+    <Build Include="dbo\Functions\udfMinimumDate.sql" />
+    <Build Include="dbo\Functions\udfTwoDigitZeroFill.sql" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="Script.PostDeployment1.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="SampleConfiguration.sql">
-      <CopyToOutputDirectory>DoNotCopy</CopyToOutputDirectory>
-    </None>
-    <None Include="AzureDB.ASPP_ConfigurationLogging.publish.xml" />
+    <None Include="AzureAS.AdventureWorksDW.publish.xml" />
   </ItemGroup>
 </Project>
