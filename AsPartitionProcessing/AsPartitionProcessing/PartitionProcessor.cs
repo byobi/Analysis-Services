@@ -537,8 +537,6 @@ namespace AsPartitionProcessing
             else
             {
                 serverConnectionString += $"User ID={_modelConfiguration.UserName};Password={_modelConfiguration.Password};Persist Security Info=True;Impersonation Level=Impersonate;";
-                Console.WriteLine(serverConnectionString);
-                Console.ReadKey();
             }
             server.Connect(serverConnectionString);
 
