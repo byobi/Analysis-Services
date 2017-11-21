@@ -84,51 +84,51 @@ VALUES ( 3          --[TableConfigurationID]
 
 
 /* Tabular: AdventureWorksDW1200 */
-INSERT INTO [dbo].[ModelConfiguration]
-VALUES(
-     2                          --[ModelConfigurationID]
-    ,'asazure://southcentralus.asazure.windows.net/opifexdemotabular'                --[AnalysisServicesServer]
-    ,'ASPP_AdventureWorksDW1200'           --[AnalysisServicesDatabase]
-    ,1                          --[InitialSetUp]
-    ,1                          --[IncrementalOnline]
-    ,0                          --[IntegratedAuth]
-    ,-1                         --[MaxParallelism]
-    ,-1                         --[CommitTimeout]
-	,0							--[RetryAttempts]
-	,0							--[RetryWaitTimeSeconds]
-);
+--INSERT INTO [dbo].[ModelConfiguration]
+--VALUES(
+--     2                          --[ModelConfigurationID]
+--    ,'asazure://southcentralus.asazure.windows.net/opifexdemotabular'                --[AnalysisServicesServer]
+--    ,'ASPP_AdventureWorksDW1200'           --[AnalysisServicesDatabase]
+--    ,1                          --[InitialSetUp]
+--    ,1                          --[IncrementalOnline]
+--    ,0                          --[IntegratedAuth]
+--    ,-1                         --[MaxParallelism]
+--    ,-1                         --[CommitTimeout]
+--	,0							--[RetryAttempts]
+--	,0							--[RetryWaitTimeSeconds]
+--);
 
-INSERT INTO [dbo].[TableConfiguration]
-VALUES(
-     6                          --[TableConfigurationID]
-    ,2                          --[ModelConfigurationID]
-    ,'Internet Sales'           --[AnalysisServicesTable]
-    ,0                          --[DoNotProcess]
-);
+--INSERT INTO [dbo].[TableConfiguration]
+--VALUES(
+--     6                          --[TableConfigurationID]
+--    ,2                          --[ModelConfigurationID]
+--    ,'Internet Sales'           --[AnalysisServicesTable]
+--    ,0                          --[DoNotProcess]
+--);
 
-INSERT INTO [dbo].[PartitioningConfiguration]
-VALUES(
-     3                          --[PartitioningConfigurationID]
-    ,6                          --[TableConfigurationID]
-    ,1                          --[Granularity]   1=Monthly
-    ,12                         --[NumberOfPartitionsFull]
-    ,3                          --[NumberOfPartitionsForIncrementalProcess]
-    ,0                          --[MaxDateIsNow]
-    ,'2012-12-01'               --[MaxDate]
-    ,1                          --[IntegerDateKey]
-    ,
-'SELECT [dbo].[FactInternetSales].* FROM [dbo].[FactInternetSales]
-WHERE OrderDateKey BETWEEN {0} AND {1}'             --[TemplateSourceQuery]
-);
-INSERT INTO [dbo].[TableConfiguration]
-VALUES ( 7          --[TableConfigurationID]
-        ,2          --[ModelConfigurationID]
-        ,'Customer' --[AnalysisServicesTable]
-        ,0          --[DoNotProcess]
-)
-      ,( 8          --[TableConfigurationID]
-        ,2          --[ModelConfigurationID]
-        ,'Product'  --[AnalysisServicesTable]
-        ,0          --[DoNotProcess]
-)
-;
+--INSERT INTO [dbo].[PartitioningConfiguration]
+--VALUES(
+--     3                          --[PartitioningConfigurationID]
+--    ,6                          --[TableConfigurationID]
+--    ,1                          --[Granularity]   1=Monthly
+--    ,12                         --[NumberOfPartitionsFull]
+--    ,3                          --[NumberOfPartitionsForIncrementalProcess]
+--    ,0                          --[MaxDateIsNow]
+--    ,'2012-12-01'               --[MaxDate]
+--    ,1                          --[IntegerDateKey]
+--    ,
+--'SELECT [dbo].[FactInternetSales].* FROM [dbo].[FactInternetSales]
+--WHERE OrderDateKey BETWEEN {0} AND {1}'             --[TemplateSourceQuery]
+--);
+--INSERT INTO [dbo].[TableConfiguration]
+--VALUES ( 7          --[TableConfigurationID]
+--        ,2          --[ModelConfigurationID]
+--        ,'Customer' --[AnalysisServicesTable]
+--        ,0          --[DoNotProcess]
+--)
+--      ,( 8          --[TableConfigurationID]
+--        ,2          --[ModelConfigurationID]
+--        ,'Product'  --[AnalysisServicesTable]
+--        ,0          --[DoNotProcess]
+--)
+--;

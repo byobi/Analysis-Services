@@ -207,7 +207,6 @@ namespace AsPartitionProcessing
             {
                 connectionString = $"Server={connectionInfo.Server};Database={connectionInfo.Database};User ID={connectionInfo.UserName};Password={connectionInfo.Password};";
             }
-
             return connectionString;
         }
     }
