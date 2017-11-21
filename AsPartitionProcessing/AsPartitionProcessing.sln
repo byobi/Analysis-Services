@@ -18,6 +18,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AsPartitionProcessing.Confi
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AsPartitionProcessing.AdventureWorksDW", "AsPartitionProcessing.AdventureWorksDW\AsPartitionProcessing.AdventureWorksDW.sqlproj", "{83E04EE7-1FCD-4622-9926-FA7B0A0E528B}"
 EndProject
+Project("{6870E480-7721-4708-BFB8-9AE898AA21B3}") = "AsPartitionProcessing.AdventureWorks1200", "AsPartitionProcessing.AdventureWorks1200\AsPartitionProcessing.AdventureWorks1200.smproj", "{8CE414BB-95B2-4C99-9E03-51BA72086E22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -104,6 +106,22 @@ Global
 		{83E04EE7-1FCD-4622-9926-FA7B0A0E528B}.Release|x86.ActiveCfg = Release|Any CPU
 		{83E04EE7-1FCD-4622-9926-FA7B0A0E528B}.Release|x86.Build.0 = Release|Any CPU
 		{83E04EE7-1FCD-4622-9926-FA7B0A0E528B}.Release|x86.Deploy.0 = Release|Any CPU
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Debug|Any CPU.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Debug|Any CPU.Build.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Debug|Any CPU.Deploy.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Debug|x86.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Debug|x86.Build.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Debug|x86.Deploy.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|Any CPU.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.Build.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.Deploy.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Release|Any CPU.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Release|Any CPU.Build.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Release|Any CPU.Deploy.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Release|x86.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Release|x86.Build.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Release|x86.Deploy.0 = Development|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

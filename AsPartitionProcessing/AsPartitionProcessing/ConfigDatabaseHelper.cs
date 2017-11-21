@@ -64,6 +64,7 @@ namespace AsPartitionProcessing
                     int currentTableConfigurationID = -1;
 
                     SqlDataReader reader = command.ExecuteReader();
+
                     while (reader.Read())
                     {
                         if (modelConfig == null || currentModelConfigurationID != Convert.ToInt32(reader["ModelConfigurationID"]))
@@ -115,7 +116,7 @@ namespace AsPartitionProcessing
                             );
                         }
                     }
-
+                    
                     return modelConfigs;
                 }
             }
