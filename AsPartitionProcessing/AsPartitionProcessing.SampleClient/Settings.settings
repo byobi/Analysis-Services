@@ -3,13 +3,13 @@
   <Profiles />
   <Settings>
     <Setting Name="ConfigServer" Type="System.String" Scope="User">
-      <Value Profile="(Default)">localhost</Value>
+      <Value Profile="(Default)">opifex-demo-sql01.database.windows.net</Value>
     </Setting>
     <Setting Name="ConfigDatabase" Type="System.String" Scope="User">
-      <Value Profile="(Default)">AsPartitionProcessing</Value>
+      <Value Profile="(Default)">ASPP_ConfigurationLogging</Value>
     </Setting>
     <Setting Name="ConfigDatabaseIntegratedAuth" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>
 </SettingsFile>

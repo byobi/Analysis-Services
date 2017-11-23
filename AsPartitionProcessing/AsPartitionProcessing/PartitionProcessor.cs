@@ -37,7 +37,7 @@ namespace AsPartitionProcessing
         #endregion
 
         #region Public Methods
-
+        
         /// <summary>
         /// Partitions tables in a tabular model based on configuration
         /// </summary>
@@ -59,7 +59,7 @@ namespace AsPartitionProcessing
             {
                 Database database;
                 Connect(server, out database);
-
+                
                 Console.ForegroundColor = ConsoleColor.White;
                 LogMessage($"Start: {DateTime.Now.ToString("hh:mm:ss tt")}", MessageType.Informational, false);
                 LogMessage($"Server: {_modelConfiguration.AnalysisServicesServer}", MessageType.Informational, false);

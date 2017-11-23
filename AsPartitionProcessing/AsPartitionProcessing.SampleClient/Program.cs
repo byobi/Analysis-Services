@@ -38,7 +38,7 @@ namespace AsPartitionProcessing.SampleClient
     class Program
     {
         //Set sample execution mode here:
-        private static ExecutionMode _executionMode = ExecutionMode.InitializeInline;
+        private static ExecutionMode _executionMode = ExecutionMode.InitializeFromDatabase;
         private static string _modelConfigurationIDs;
 
         static int Main(string[] args)
@@ -101,6 +101,7 @@ namespace AsPartitionProcessing.SampleClient
                 Console.WriteLine();
                 Console.WriteLine(exc.Message);
                 Console.WriteLine();
+                Console.ReadKey();
                 Console.ForegroundColor = ConsoleColor.White;
 
                 if (exc is ArgumentException)

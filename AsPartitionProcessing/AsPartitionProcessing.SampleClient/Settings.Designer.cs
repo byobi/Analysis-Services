@@ -12,7 +12,7 @@ namespace AsPartitionProcessing.SampleClient {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.3.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -25,7 +25,7 @@ namespace AsPartitionProcessing.SampleClient {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("localhost")]
+        [global::System.Configuration.DefaultSettingValueAttribute("opifex-demo-sql01.database.windows.net")]
         public string ConfigServer {
             get {
                 return ((string)(this["ConfigServer"]));
@@ -37,7 +37,7 @@ namespace AsPartitionProcessing.SampleClient {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("AsPartitionProcessing")]
+        [global::System.Configuration.DefaultSettingValueAttribute("ASPP_ConfigurationLogging")]
         public string ConfigDatabase {
             get {
                 return ((string)(this["ConfigDatabase"]));
@@ -49,7 +49,7 @@ namespace AsPartitionProcessing.SampleClient {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool ConfigDatabaseIntegratedAuth {
             get {
                 return ((bool)(this["ConfigDatabaseIntegratedAuth"]));
