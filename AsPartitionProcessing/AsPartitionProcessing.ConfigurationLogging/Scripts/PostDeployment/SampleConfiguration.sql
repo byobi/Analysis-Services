@@ -1,4 +1,9 @@
-﻿INSERT INTO [dbo].[ModelConfiguration]
+﻿/* Clean up */
+DELETE FROM [dbo].[PartitioningConfiguration];
+DELETE FROM [dbo].[TableConfiguration];
+DELETE FROM [dbo].[ModelConfiguration];
+
+INSERT INTO [dbo].[ModelConfiguration]
 VALUES(
      1                          --[ModelConfigurationID]
     ,'asazure://southcentralus.asazure.windows.net/opifexdemotabular'                --[AnalysisServicesServer]

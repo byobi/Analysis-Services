@@ -10,4 +10,7 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 
-:r .\SampleConfiguration.sql
+:r .\PostDeployment\SampleConfiguration.sql
+
+/* keep costs low w/ Basic Tier */
+ALTER DATABASE $(DatabaseName) MODIFY (EDITION = 'Basic', MAXSIZE = 2 GB, SERVICE_OBJECTIVE = 'Basic');

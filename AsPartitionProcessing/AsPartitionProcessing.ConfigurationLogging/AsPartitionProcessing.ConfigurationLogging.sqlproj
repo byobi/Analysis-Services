@@ -63,6 +63,8 @@
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Views\" />
     <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\PostDeployment" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\ModelConfiguration.sql" />
@@ -71,14 +73,12 @@
     <Build Include="dbo\Tables\TableConfiguration.sql" />
     <Build Include="dbo\Views\vPartitioningConfiguration.sql" />
     <Build Include="dbo\Stored Procedures\usp_LastProcessingLogs.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <PostDeploy Include="Script.PostDeployment1.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="SampleConfiguration.sql">
+    <None Include="Scripts\PostDeployment\SampleConfiguration.sql">
       <CopyToOutputDirectory>DoNotCopy</CopyToOutputDirectory>
     </None>
+    <PostDeploy Include="Scripts\Script.PostDeployment1.sql" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="AzureDB.ASPP_ConfigurationLogging.publish.xml" />
   </ItemGroup>
 </Project>
