@@ -1,8 +1,4 @@
-﻿/* Clean up */
-DELETE FROM [dbo].[PartitioningConfiguration];
-DELETE FROM [dbo].[TableConfiguration];
-DELETE FROM [dbo].[ModelConfiguration];
-
+﻿
 INSERT INTO [dbo].[ModelConfiguration]
 VALUES(
      1                          --[ModelConfigurationID]
@@ -10,7 +6,7 @@ VALUES(
     ,'ASPP_AdventureWorksDW'           --[AnalysisServicesDatabase]
     ,1                          --[InitialSetUp]
     ,1                          --[IncrementalOnline]
-    ,1                          --[IntegratedAuth]
+    ,0                          --[IntegratedAuth]
     ,-1                         --[MaxParallelism]
     ,-1                         --[CommitTimeout]
 	,0							--[RetryAttempts]
