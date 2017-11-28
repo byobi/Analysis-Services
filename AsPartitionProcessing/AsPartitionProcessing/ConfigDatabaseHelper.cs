@@ -25,6 +25,7 @@ namespace AsPartitionProcessing
                               ,[InitialSetUp]
                               ,[IncrementalOnline]
                               ,[IntegratedAuth]
+                              ,[ServicePrincipal]
                               ,[MaxParallelism]
                               ,[CommitTimeout]
                               ,[RetryAttempts]
@@ -79,6 +80,7 @@ namespace AsPartitionProcessing
                             modelConfig.InitialSetUp = Convert.ToBoolean(reader["InitialSetUp"]);
                             modelConfig.IncrementalOnline = Convert.ToBoolean(reader["IncrementalOnline"]);
                             modelConfig.IntegratedAuth = Convert.ToBoolean(reader["IntegratedAuth"]);
+                            modelConfig.ServicePrincipalTokenAuth = Convert.ToBoolean(reader["ServicePrincipal"]);
                             modelConfig.MaxParallelism = Convert.ToInt32(reader["MaxParallelism"]);
                             modelConfig.CommitTimeout = Convert.ToInt32(reader["CommitTimeout"]);
                             modelConfig.RetryAttempts = Convert.ToInt32(reader["RetryAttempts"]);

@@ -324,12 +324,12 @@ namespace AsPartitionProcessing.SampleClient
                 } else
                 {
                     /* hard coded for testing */
-                    String azure_endpoint = "southcentralus.asazure.windows.net";
+                    String azure_endpoint = "https://southcentralus.asazure.windows.net";
                     String azure_Tenantid = "54fd453c-3cc6-41e8-8200-fa568f04164a";
-                    String azure_ClientID = "9964d45f-ab47-4b2e-804d-16ccc0743e62";
+                    String azure_AppID = "9964d45f-ab47-4b2e-804d-16ccc0743e62";
                     String azure_AppKey = "vFnC2OQ5bouGK3yiteKkBv1DXKwG2ZTZ+9Jfso8wi34=";
-                    AuthenticationContext aad_auth_context = new AuthenticationContext("https://login.windows.net/" + azure_Tenantid); ;
-                    ClientCredential aad_client_credential = new ClientCredential(azure_ClientID, azure_AppKey);
+                    AuthenticationContext aad_auth_context = new AuthenticationContext("https://login.windows.net/" + azure_Tenantid);
+                    ClientCredential aad_client_credential = new ClientCredential(azure_AppID, azure_AppKey);
                     AuthenticationResult aad_token = aad_auth_context.AcquireTokenAsync(azure_endpoint, aad_client_credential).Result;
                     modelConfig.Password = aad_token.AccessToken;
                 }
