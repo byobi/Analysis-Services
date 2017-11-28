@@ -39,6 +39,11 @@ namespace AsPartitionProcessing
         public bool IntegratedAuth { get; set; }
 
         /// <summary>
+        /// Only applies when integratedAuth=false. Azure AD UPN vs ServicePrincipal.
+        /// </summary>
+        public bool ServicePrincipalTokenAuth { get; set; }
+
+        /// <summary>
         /// Only applies when integratedAuth=false. Used for Azure AD UPNs to connect to Azure AS.
         /// </summary>
         public string UserName { get; set; }

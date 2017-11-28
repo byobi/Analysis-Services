@@ -534,6 +534,10 @@ namespace AsPartitionProcessing
             {
                 serverConnectionString += $"Integrated Security=SSPI;";
             }
+            else if (_modelConfiguration.ServicePrincipalTokenAuth)
+            {
+                serverConnectionString += $"Password={_modelConfiguration.Password};Persist Security Info=True;Impersonation Level=Impersonate;";
+            }
             else
             {
                 serverConnectionString += $"User ID={_modelConfiguration.UserName};Password={_modelConfiguration.Password};Persist Security Info=True;Impersonation Level=Impersonate;";

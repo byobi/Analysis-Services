@@ -7,6 +7,7 @@ VALUES(
     ,1                          --[InitialSetUp]
     ,1                          --[IncrementalOnline]
     ,0                          --[IntegratedAuth]
+    ,1                          --[ServicePrincipal]
     ,-1                         --[MaxParallelism]
     ,-1                         --[CommitTimeout]
 	,0							--[RetryAttempts]
