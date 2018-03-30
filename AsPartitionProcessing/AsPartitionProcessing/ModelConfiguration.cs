@@ -97,6 +97,7 @@ namespace AsPartitionProcessing
         /// <param name="initialSetUp">True for initial set up to create partitions and process them sequentially. False for incremental processing.</param>
         /// <param name="incrementalOnline">When initialSetUp=false, determines if processing is performed as an online operation, which may require more memory, but users can still query the model.</param>
         /// <param name="integratedAuth">Should always set to true for SSAS implementations that will run under the current process account. For Azure AS, normally set to false.</param>
+        /// <param name="ServicePrincipalTokenAuth">Set to true when using service principal w/ Azure AS.</param>
         /// <param name="userName">Only applies when integratedAuth=false. Used for Azure AD UPNs to connect to Azure AS.</param>
         /// <param name="password">Only applies when integratedAuth=false. Used for Azure AD UPNs to connect to Azure AS.</param>
         /// <param name="maxParallelism">Sets the maximum number of threads on which to run processing commands in parallel. -1 will not set the value.</param>
@@ -111,6 +112,7 @@ namespace AsPartitionProcessing
             bool initialSetUp,
             bool incrementalOnline,
             bool integratedAuth,
+            bool serviceprincipal,
             string userName,
             string password,
             int maxParallelism,
@@ -126,6 +128,7 @@ namespace AsPartitionProcessing
             InitialSetUp = initialSetUp;
             IncrementalOnline = incrementalOnline;
             IntegratedAuth = integratedAuth;
+            ServicePrincipalTokenAuth = serviceprincipal;
             UserName = userName;
             Password = password;
             MaxParallelism = maxParallelism;

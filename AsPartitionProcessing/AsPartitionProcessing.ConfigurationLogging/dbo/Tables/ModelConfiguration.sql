@@ -6,7 +6,6 @@
     [IncrementalOnline]        BIT           NOT NULL,
     [IntegratedAuth]           BIT           NOT NULL,
     [ServicePrincipal]         BIT           NOT NULL,
-
     [MaxParallelism]           INT           NOT NULL,
     [CommitTimeout]            INT           NOT NULL,
     [RetryAttempts]			   TINYINT NOT NULL, 

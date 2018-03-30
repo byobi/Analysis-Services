@@ -536,7 +536,7 @@ namespace AsPartitionProcessing
             }
             else if (_modelConfiguration.ServicePrincipalTokenAuth)
             {
-                serverConnectionString += $"Password={_modelConfiguration.Password};Persist Security Info=True;Impersonation Level=Impersonate;";
+                serverConnectionString += $"User ID=app:{_modelConfiguration.UserName};Password={_modelConfiguration.Password};";
             }
             else
             {
